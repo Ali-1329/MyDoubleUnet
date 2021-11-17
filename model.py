@@ -135,6 +135,7 @@ def build_model(input_shape):
     output2 = output_block(x)
 
     outputs = Concatenate()([output1, output2])
+    outputs=output_block(outputs)
     model = Model(inputs, outputs)
     return model
 
