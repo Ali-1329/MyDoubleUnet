@@ -6,7 +6,7 @@ import cv2
 from tensorflow.keras.optimizers import Adam, Nadam
 import tensorflow as tf
 from tensorflow.keras.callbacks import *
-from data import load_data,tf_dataset
+from train import *
 from model import build_model
 from tensorflow.keras.metrics import *
 from tensorflow.keras.utils import CustomObjectScope
